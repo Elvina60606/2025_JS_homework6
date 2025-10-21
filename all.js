@@ -5,6 +5,9 @@ axios.get("https://raw.githubusercontent.com/hexschool/js-training/main/travelAp
       data = response.data.data;
       renderData(data);
      })
+     .catch(function(error){
+      console.log(error);
+     })
 
 ////////////////////////
 const ticketCard_area = document.querySelector(".ticketCard-area")
